@@ -96,3 +96,8 @@ cadaver http://*server*:*port*/tmp
 !!!!!!!!!!!!!   kafka   !!!!!!!!!!!!!
 
 kcat -b *server* -L
+
+!!!!!!!!!!!!!   sql   !!!!!!!!!!!!!
+
+Создать таблицу с одним столбцом из списка
+SELECT unnest(array[:idList]) as id
